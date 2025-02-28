@@ -9,73 +9,73 @@ export default function ServicesPage() {
     {
       id: "wellness",
       icon: <Stethoscope className="h-8 w-8 text-primary" />,
-      title: "Wellness Exams",
-      description: "Comprehensive physical examinations to assess your pet's overall health",
+      title: "Terveystarkastukset",
+      description: "Kattavat fyysiset tutkimukset lemmikkisi yleisen terveyden arvioimiseksi",
       details:
-        "Our thorough wellness exams include checking vital signs, weight, eyes, ears, mouth, skin, coat, and internal organs. We recommend annual exams for adult pets and bi-annual exams for senior pets.",
+        "Perusteelliset terveystarkastuksemme sisältävät elintoimintojen, painon, silmien, korvien, suun, ihon, turkin ja sisäelinten tarkistuksen. Suosittelemme vuosittaisia tarkastuksia aikuisille lemmikeille ja puolivuosittaisia tarkastuksia seniorilemmikeille.",
       image: "/placeholder.svg?height=300&width=500",
     },
     {
       id: "vaccinations",
       icon: <Syringe className="h-8 w-8 text-primary" />,
-      title: "Vaccinations",
-      description: "Core and lifestyle vaccines to protect your pet from common diseases",
+      title: "Rokotukset",
+      description: "Perus- ja elämäntaparokotukset lemmikkisi suojaamiseksi yleisiltä sairauksilta",
       details:
-        "We offer all core vaccines for dogs and cats, as well as additional vaccines based on your pet's lifestyle and risk factors. Our veterinarians will create a customized vaccination schedule for your pet.",
+        "Tarjoamme kaikki perusrokotukset koirille ja kissoille sekä lisärokotuksia lemmikkisi elämäntavan ja riskitekijöiden perusteella. Eläinlääkärimme luovat yksilöllisen rokotusaikataulun lemmikillesi.",
       image: "/placeholder.svg?height=300&width=500",
     },
     {
       id: "surgery",
       icon: <Scissors className="h-8 w-8 text-primary" />,
-      title: "Surgical Services",
-      description: "From routine spay/neuter to complex procedures",
+      title: "Kirurgiset Palvelut",
+      description: "Rutiininomaisesta kastraatiosta/sterilisaatiosta monimutkaisiin toimenpiteisiin",
       details:
-        "Our surgical suite is equipped with advanced monitoring equipment and our team is trained in the latest surgical techniques. We perform routine procedures like spay/neuter as well as more complex soft tissue and orthopedic surgeries.",
+        "Leikkaussalimme on varustettu edistyneillä valvontalaitteilla ja tiimimme on koulutettu uusimpiin kirurgisiin tekniikoihin. Suoritamme rutiininomaisia toimenpiteitä kuten kastraatio/sterilisaatio sekä monimutkaisempia pehmytkudos- ja ortopedisiä leikkauksia.",
       image: "/placeholder.svg?height=300&width=500",
     },
     {
       id: "dental",
       icon: <Tooth className="h-8 w-8 text-primary" />,
-      title: "Dental Care",
-      description: "Professional cleaning and dental treatments to maintain oral health",
+      title: "Hammashoito",
+      description: "Ammattimainen puhdistus ja hammashoidot suun terveyden ylläpitämiseksi",
       details:
-        "Our dental services include comprehensive oral exams, digital dental X-rays, professional cleaning, extractions when necessary, and guidance on at-home dental care to maintain your pet's oral health between visits.",
+        "Hammaspalveluihimme kuuluvat kattavat suun tutkimukset, digitaaliset hammasröntgenkuvat, ammattimainen puhdistus, tarvittaessa poistot ja ohjaus kotona tapahtuvaan hammashoitoon lemmikkisi suun terveyden ylläpitämiseksi käyntien välillä.",
       image: "/placeholder.svg?height=300&width=500",
     },
     {
       id: "preventive",
       icon: <Heart className="h-8 w-8 text-primary" />,
-      title: "Preventive Care",
-      description: "Parasite prevention and control for a healthier pet",
+      title: "Ennaltaehkäisevä Hoito",
+      description: "Loisten ehkäisy ja torjunta terveemmälle lemmikille",
       details:
-        "We offer comprehensive parasite prevention programs including heartworm, flea, tick, and intestinal parasite control. Our team will recommend the best preventive products based on your pet's needs and lifestyle.",
+        "Tarjoamme kattavia loisten ehkäisyohjelmia, mukaan lukien sydänmadon, kirppujen, punkkien ja suolistoloisten torjunta. Tiimimme suosittelee parhaita ennaltaehkäiseviä tuotteita lemmikkisi tarpeiden ja elämäntavan perusteella.",
       image: "/placeholder.svg?height=300&width=500",
     },
     {
       id: "diagnostics",
       icon: <Microscope className="h-8 w-8 text-primary" />,
-      title: "Diagnostic Services",
-      description: "Advanced testing and imaging for accurate diagnosis",
+      title: "Diagnostiikkapalvelut",
+      description: "Edistyneet testit ja kuvantaminen tarkkaa diagnoosia varten",
       details:
-        "Our in-house laboratory and diagnostic imaging capabilities allow for quick and accurate diagnosis. Services include blood work, urinalysis, fecal testing, digital X-rays, ultrasound, and more.",
+        "Sisäinen laboratoriomme ja diagnostiset kuvantamisvalmiutemme mahdollistavat nopean ja tarkan diagnoosin. Palveluihin kuuluvat verikokeet, virtsa-analyysit, ulostenäytteiden tutkimukset, digitaaliset röntgenkuvat, ultraääni ja paljon muuta.",
       image: "/placeholder.svg?height=300&width=500",
     },
     {
       id: "senior",
       icon: <PawPrint className="h-8 w-8 text-primary" />,
-      title: "Senior Pet Care",
-      description: "Specialized care for aging pets to maintain quality of life",
+      title: "Seniorieläinten Hoito",
+      description: "Erikoistunut hoito ikääntyville lemmikeille elämänlaadun ylläpitämiseksi",
       details:
-        "As pets age, they require more specialized care. Our senior pet programs include more frequent check-ups, comprehensive blood work, and management of age-related conditions to keep your older pet comfortable and healthy.",
+        "Lemmikkien ikääntyessä ne tarvitsevat erikoistuneempaa hoitoa. Seniorieläinohjelmiimme kuuluvat tiheämmät tarkastukset, kattavat verikokeet ja ikään liittyvien sairauksien hallinta pitääksemme vanhemman lemmikkisi mukavana ja terveenä.",
       image: "/placeholder.svg?height=300&width=500",
     },
     {
       id: "pharmacy",
       icon: <Pill className="h-8 w-8 text-primary" />,
-      title: "Pharmacy Services",
-      description: "Convenient access to medications and prescription diets",
+      title: "Apteekkipalvelut",
+      description: "Kätevä pääsy lääkkeisiin ja reseptiruokavalioihin",
       details:
-        "Our in-house pharmacy provides immediate access to medications your pet may need. We also offer online prescription refills and carry a variety of prescription diets to address specific health concerns.",
+        "Sisäinen apteekkimme tarjoaa välittömän pääsyn lääkkeisiin, joita lemmikkisi saattaa tarvita. Tarjoamme myös verkossa reseptien uusimisen ja meillä on valikoima reseptiruokavalioita erityisten terveyshuolien käsittelemiseksi.",
       image: "/placeholder.svg?height=300&width=500",
     },
   ]
@@ -86,12 +86,13 @@ export default function ServicesPage() {
       <section className="bg-primary/10 py-12 md:py-16">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl font-bold mb-4">Our Veterinary Services</h1>
+            <h1 className="text-4xl font-bold mb-4">Eläinlääkäripalvelumme</h1>
             <p className="text-lg text-muted-foreground mb-6">
-              Comprehensive care for every stage of your pet's life, from preventive wellness to specialized treatments.
+              Kattavaa hoitoa lemmikkisi elämän jokaiseen vaiheeseen, ennaltaehkäisevästä hyvinvoinnista
+              erikoishoitoihin.
             </p>
             <Button size="lg" asChild>
-              <Link href="/appointment">Schedule an Appointment</Link>
+              <Link href="/appointment">Varaa Aika</Link>
             </Button>
           </div>
         </div>
@@ -125,7 +126,7 @@ export default function ServicesPage() {
                   <p className="text-lg text-muted-foreground mb-4">{service.description}</p>
                   <p className="mb-6">{service.details}</p>
                   <Button asChild>
-                    <Link href="/appointment">Book This Service</Link>
+                    <Link href="/appointment">Varaa Tämä Palvelu</Link>
                   </Button>
                 </div>
               </div>
@@ -138,53 +139,54 @@ export default function ServicesPage() {
       <section className="py-16 bg-secondary/50">
         <div className="container">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl font-bold mb-8 text-center">Frequently Asked Questions</h2>
+            <h2 className="text-3xl font-bold mb-8 text-center">Usein Kysytyt Kysymykset</h2>
             <div className="space-y-6">
               <Card>
                 <CardHeader>
-                  <CardTitle>How often should I bring my pet for a check-up?</CardTitle>
+                  <CardTitle>Kuinka usein minun pitäisi tuoda lemmikkini tarkastukseen?</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p>
-                    We recommend annual wellness exams for adult pets and bi-annual exams for senior pets (generally
-                    over 7 years for dogs and over 10 years for cats). Puppies and kittens need more frequent visits for
-                    vaccinations and development monitoring.
+                    Suosittelemme vuosittaisia terveystarkastuksia aikuisille lemmikeille ja puolivuosittaisia
+                    tarkastuksia seniorilemmikeille (yleensä yli 7-vuotiaat koirat ja yli 10-vuotiaat kissat). Pennut ja
+                    kissanpennut tarvitsevat tiheämpiä käyntejä rokotuksia ja kehityksen seurantaa varten.
                   </p>
                 </CardContent>
               </Card>
               <Card>
                 <CardHeader>
-                  <CardTitle>What vaccinations does my pet need?</CardTitle>
+                  <CardTitle>Mitä rokotuksia lemmikkini tarvitsee?</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p>
-                    Core vaccines for dogs include rabies, distemper, parvovirus, and adenovirus. For cats, core
-                    vaccines include rabies, panleukopenia, calicivirus, and herpesvirus. Additional vaccines may be
-                    recommended based on your pet's lifestyle and risk factors.
+                    Koirien perusrokotuksiin kuuluvat rabies, penikkatauti, parvovirus ja adenovirus. Kissojen
+                    perusrokotuksiin kuuluvat rabies, panleukopenia, calicivirus ja herpesvirus. Lisärokotuksia voidaan
+                    suositella lemmikkisi elämäntavan ja riskitekijöiden perusteella.
                   </p>
                 </CardContent>
               </Card>
               <Card>
                 <CardHeader>
-                  <CardTitle>How do I prepare my pet for surgery?</CardTitle>
+                  <CardTitle>Miten valmistelen lemmikkini leikkaukseen?</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p>
-                    Typically, we ask that you withhold food for 8-12 hours before surgery, though water is usually
-                    allowed until the morning of the procedure. We'll provide specific instructions during your
-                    pre-surgical consultation based on your pet's individual needs.
+                    Tyypillisesti pyydämme, että pidät lemmikin ravinnotta 8-12 tuntia ennen leikkausta, vaikka vettä
+                    saa yleensä antaa leikkauspäivän aamuun asti. Annamme tarkat ohjeet leikkausta edeltävässä
+                    konsultaatiossa lemmikkisi yksilöllisten tarpeiden perusteella.
                   </p>
                 </CardContent>
               </Card>
               <Card>
                 <CardHeader>
-                  <CardTitle>Do you offer emergency services?</CardTitle>
+                  <CardTitle>Tarjoatteko päivystyspalveluja?</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p>
-                    We offer urgent care during our regular business hours. For after-hours emergencies, we work closely
-                    with local emergency clinics and can direct you to the nearest facility. Please call us even after
-                    hours for guidance on emergency situations.
+                    Tarjoamme kiireellistä hoitoa normaalien aukioloaikojemme puitteissa. Aukioloaikojen ulkopuolisissa
+                    hätätilanteissa teemme tiivistä yhteistyötä paikallisten päivystysklinikkojen kanssa ja voimme
+                    ohjata sinut lähimpään toimipisteeseen. Soita meille myös aukioloaikojen ulkopuolella saadaksesi
+                    ohjeita hätätilanteissa.
                   </p>
                 </CardContent>
               </Card>
@@ -196,12 +198,12 @@ export default function ServicesPage() {
       {/* CTA Section */}
       <section className="py-16 bg-primary text-primary-foreground">
         <div className="container text-center">
-          <h2 className="text-3xl font-bold mb-6">Ready to Schedule a Visit?</h2>
+          <h2 className="text-3xl font-bold mb-6">Valmis Varaamaan Käynnin?</h2>
           <p className="max-w-2xl mx-auto mb-8 opacity-90">
-            Whether your pet needs a routine check-up or specialized care, our team is here to help.
+            Tarvitsipa lemmikkisi rutiininomaista tarkastusta tai erikoishoitoa, tiimimme on täällä auttamassa.
           </p>
           <Button size="lg" variant="secondary" asChild>
-            <Link href="/appointment">Book an Appointment</Link>
+            <Link href="/appointment">Varaa Aika</Link>
           </Button>
         </div>
       </section>

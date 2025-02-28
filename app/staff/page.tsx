@@ -7,11 +7,11 @@ import { Facebook, Instagram, Linkedin } from "lucide-react"
 export default function StaffPage() {
   const veterinarians = [
     {
-      name: "Dr. Sarah Johnson",
-      title: "Chief Veterinarian",
+      name: "ELL Sanna Järvinen",
+      title: "Johtava Eläinlääkäri",
       image: "/placeholder.svg?height=400&width=400",
-      bio: "Dr. Johnson has been practicing veterinary medicine for over 15 years. She received her DVM from Cornell University and has special interests in internal medicine and preventive care. She shares her home with two rescue dogs and a cat.",
-      specialties: ["Internal Medicine", "Preventive Care", "Senior Pet Care"],
+      bio: "ELL Järvinen on harjoittanut eläinlääketiedettä yli 15 vuotta. Hän sai eläinlääketieteen tohtorin tutkintonsa Helsingin yliopistosta ja on erityisen kiinnostunut sisätaudeista ja ennaltaehkäisevästä hoidosta. Hän jakaa kotinsa kahden rescue-koiran ja kissan kanssa.",
+      specialties: ["Sisätaudit", "Ennaltaehkäisevä Hoito", "Seniorieläinten Hoito"],
       social: {
         linkedin: "#",
         facebook: "#",
@@ -19,11 +19,11 @@ export default function StaffPage() {
       },
     },
     {
-      name: "Dr. Michael Chen",
-      title: "Veterinary Surgeon",
+      name: "ELL Mikko Korhonen",
+      title: "Eläinkirurgi",
       image: "/placeholder.svg?height=400&width=400",
-      bio: "Dr. Chen specializes in orthopedic and soft tissue surgeries. After receiving his veterinary degree from UC Davis, he completed a surgical residency at the University of Pennsylvania. He is passionate about providing the highest quality surgical care for pets.",
-      specialties: ["Orthopedic Surgery", "Soft Tissue Surgery", "Minimally Invasive Procedures"],
+      bio: "ELL Korhonen on erikoistunut ortopedisiin ja pehmytkudosleikkauksiin. Saatuaan eläinlääkärin tutkintonsa Helsingin yliopistosta hän suoritti kirurgisen erikoistumisen Uppsalan yliopistossa. Hän on intohimoinen tarjoamaan korkealaatuisinta kirurgista hoitoa lemmikeille.",
+      specialties: ["Ortopedinen Kirurgia", "Pehmytkudoskirurgia", "Minimaalisesti Invasiiviset Toimenpiteet"],
       social: {
         linkedin: "#",
         facebook: "#",
@@ -31,11 +31,11 @@ export default function StaffPage() {
       },
     },
     {
-      name: "Dr. Emily Rodriguez",
-      title: "Associate Veterinarian",
+      name: "ELL Emilia Rodriguez",
+      title: "Eläinlääkäri",
       image: "/placeholder.svg?height=400&width=400",
-      bio: "Dr. Rodriguez joined our team after graduating from Texas A&M. She has a special interest in dermatology and dental health. Her gentle approach makes her a favorite among anxious pets and their owners.",
-      specialties: ["Dermatology", "Dental Care", "Behavior Counseling"],
+      bio: "ELL Rodriguez liittyi tiimiimme valmistuttuaan Helsingin yliopistosta. Hänellä on erityinen kiinnostus dermatologiaan ja hammasterveyteen. Hänen lempeä lähestymistapansa tekee hänestä suosikin ahdistuneiden lemmikkien ja heidän omistajiensa keskuudessa.",
+      specialties: ["Dermatologia", "Hammashoito", "Käyttäytymisneuvonta"],
       social: {
         linkedin: "#",
         facebook: "#",
@@ -43,11 +43,11 @@ export default function StaffPage() {
       },
     },
     {
-      name: "Dr. James Wilson",
-      title: "Associate Veterinarian",
+      name: "ELL Juhani Virtanen",
+      title: "Eläinlääkäri",
       image: "/placeholder.svg?height=400&width=400",
-      bio: "Dr. Wilson brings over 10 years of emergency medicine experience to our practice. He excels in critical care and complex medical cases. When not at the clinic, he enjoys hiking with his two Labrador retrievers.",
-      specialties: ["Emergency Medicine", "Critical Care", "Ultrasound"],
+      bio: "ELL Virtanen tuo yli 10 vuoden päivystyslääketieteen kokemuksen käytäntöömme. Hän loistaa kriittisessä hoidossa ja monimutkaisissa lääketieteellisissä tapauksissa. Kun hän ei ole klinikalla, hän nauttii vaelluksesta kahden labradorinnoutajansa kanssa.",
+      specialties: ["Päivystyslääketiede", "Tehohoito", "Ultraääni"],
       social: {
         linkedin: "#",
         facebook: "#",
@@ -58,40 +58,40 @@ export default function StaffPage() {
 
   const staff = [
     {
-      name: "Lisa Martinez",
-      title: "Practice Manager",
+      name: "Liisa Mäkinen",
+      title: "Klinikan Johtaja",
       image: "/placeholder.svg?height=300&width=300",
-      bio: "Lisa ensures our clinic runs smoothly and efficiently. With a background in business administration and a love for animals, she's the perfect person to manage our day-to-day operations.",
+      bio: "Liisa varmistaa, että klinikkamme toimii sujuvasti ja tehokkaasti. Liiketalouden taustalla ja eläinrakkaudella varustettuna hän on täydellinen henkilö johtamaan päivittäisiä toimintojamme.",
     },
     {
-      name: "Carlos Diaz",
-      title: "Lead Veterinary Technician",
+      name: "Kalle Nieminen",
+      title: "Vastaava Eläintenhoitaja",
       image: "/placeholder.svg?height=300&width=300",
-      bio: "Carlos has been a certified veterinary technician for 8 years. He assists in surgeries, dental procedures, and ensures our patients receive the best care during their stay.",
+      bio: "Kalle on ollut sertifioitu eläintenhoitaja 8 vuotta. Hän avustaa leikkauksissa, hammastoimenpiteissä ja varmistaa, että potilaamme saavat parasta hoitoa oleskelunsa aikana.",
     },
     {
-      name: "Taylor Kim",
-      title: "Veterinary Technician",
+      name: "Tiina Koskinen",
+      title: "Eläintenhoitaja",
       image: "/placeholder.svg?height=300&width=300",
-      bio: "Taylor specializes in laboratory work and patient monitoring. Her calm demeanor helps anxious pets feel at ease during their visits.",
+      bio: "Tiina on erikoistunut laboratoriotyöhön ja potilaiden valvontaan. Hänen rauhallinen käytöksensä auttaa ahdistuneita lemmikkejä tuntemaan olonsa mukavaksi käyntiensä aikana.",
     },
     {
-      name: "Alex Johnson",
-      title: "Veterinary Assistant",
+      name: "Aleksi Jokinen",
+      title: "Eläintenhoitajan Avustaja",
       image: "/placeholder.svg?height=300&width=300",
-      bio: "Alex assists our veterinarians and technicians with examinations and treatments. He's currently pursuing his veterinary technician certification.",
+      bio: "Aleksi avustaa eläinlääkäreitämme ja hoitajiamme tutkimuksissa ja hoidoissa. Hän opiskelee parhaillaan eläintenhoitajan sertifikaattia.",
     },
     {
-      name: "Olivia Smith",
-      title: "Client Care Coordinator",
+      name: "Olivia Salonen",
+      title: "Asiakaspalvelukoordinaattori",
       image: "/placeholder.svg?height=300&width=300",
-      bio: "Olivia is often the first friendly face you'll see at our clinic. She manages appointments, answers questions, and ensures a positive experience for all our clients.",
+      bio: "Olivia on usein ensimmäinen ystävällinen kasvo, jonka näet klinikallamme. Hän hallinnoi ajanvarauksia, vastaa kysymyksiin ja varmistaa positiivisen kokemuksen kaikille asiakkaillemme.",
     },
     {
-      name: "Marcus Lee",
-      title: "Client Care Specialist",
+      name: "Markus Lehtonen",
+      title: "Asiakaspalveluasiantuntija",
       image: "/placeholder.svg?height=300&width=300",
-      bio: "Marcus helps clients understand treatment plans and handles insurance and billing questions. His knowledge and patience make him an invaluable team member.",
+      bio: "Markus auttaa asiakkaita ymmärtämään hoitosuunnitelmia ja käsittelee vakuutus- ja laskutuskysymyksiä. Hänen tietämyksensä ja kärsivällisyytensä tekevät hänestä korvaamattoman tiimin jäsenen.",
     },
   ]
 
@@ -101,10 +101,10 @@ export default function StaffPage() {
       <section className="bg-primary/10 py-12 md:py-16">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl font-bold mb-4">Meet Our Team</h1>
+            <h1 className="text-4xl font-bold mb-4">Tutustu Tiimiimme</h1>
             <p className="text-lg text-muted-foreground">
-              Our compassionate and skilled team is dedicated to providing the highest quality care for your beloved
-              pets.
+              Myötätuntoinen ja taitava tiimimme on omistautunut tarjoamaan korkealaatuisinta hoitoa rakkaille
+              lemmikeillesi.
             </p>
           </div>
         </div>
@@ -113,7 +113,7 @@ export default function StaffPage() {
       {/* Veterinarians Section */}
       <section className="py-16 bg-white">
         <div className="container">
-          <h2 className="text-3xl font-bold mb-8 text-center">Our Veterinarians</h2>
+          <h2 className="text-3xl font-bold mb-8 text-center">Eläinlääkärimme</h2>
           <div className="grid md:grid-cols-2 gap-8">
             {veterinarians.map((vet, index) => (
               <Card key={index} className="overflow-hidden">
@@ -126,7 +126,7 @@ export default function StaffPage() {
                     <p className="text-primary font-medium mb-3">{vet.title}</p>
                     <p className="text-sm text-muted-foreground mb-4">{vet.bio}</p>
                     <div className="mb-4">
-                      <h4 className="text-sm font-semibold mb-2">Specialties:</h4>
+                      <h4 className="text-sm font-semibold mb-2">Erikoisalat:</h4>
                       <ul className="text-sm space-y-1">
                         {vet.specialties.map((specialty, i) => (
                           <li key={i} className="flex items-center">
@@ -161,7 +161,7 @@ export default function StaffPage() {
       {/* Support Staff Section */}
       <section className="py-16 bg-secondary/50">
         <div className="container">
-          <h2 className="text-3xl font-bold mb-8 text-center">Our Support Staff</h2>
+          <h2 className="text-3xl font-bold mb-8 text-center">Muu Henkilökuntamme</h2>
           <div className="grid md:grid-cols-3 gap-6">
             {staff.map((member, index) => (
               <Card key={index} className="overflow-hidden">
@@ -183,13 +183,13 @@ export default function StaffPage() {
       <section className="py-16 bg-white">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-4">Join Our Team</h2>
+            <h2 className="text-3xl font-bold mb-4">Liity Tiimiimme</h2>
             <p className="text-lg text-muted-foreground mb-6">
-              We're always looking for passionate, skilled professionals to join our veterinary family. If you love
-              animals and want to make a difference in their lives, we'd love to hear from you.
+              Etsimme aina intohimoisia, taitavia ammattilaisia liittymään eläinlääkäriperheesemme. Jos rakastat eläimiä
+              ja haluat tehdä eron niiden elämässä, haluaisimme kuulla sinusta.
             </p>
             <Button size="lg" asChild>
-              <Link href="/careers">View Open Positions</Link>
+              <Link href="/careers">Katso Avoimet Työpaikat</Link>
             </Button>
           </div>
         </div>
@@ -198,12 +198,12 @@ export default function StaffPage() {
       {/* CTA Section */}
       <section className="py-16 bg-primary text-primary-foreground">
         <div className="container text-center">
-          <h2 className="text-3xl font-bold mb-6">Meet Our Team in Person</h2>
+          <h2 className="text-3xl font-bold mb-6">Tapaa Tiimimme Henkilökohtaisesti</h2>
           <p className="max-w-2xl mx-auto mb-8 opacity-90">
-            Schedule an appointment today and experience our compassionate care firsthand.
+            Varaa aika tänään ja koe myötätuntoinen hoitomme omakohtaisesti.
           </p>
           <Button size="lg" variant="secondary" asChild>
-            <Link href="/appointment">Book an Appointment</Link>
+            <Link href="/appointment">Varaa Aika</Link>
           </Button>
         </div>
       </section>

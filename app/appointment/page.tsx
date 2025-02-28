@@ -13,6 +13,7 @@ import { Textarea } from "@/components/ui/textarea"
 import { Calendar } from "@/components/ui/calendar"
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover"
 import { format } from "date-fns"
+import { fi } from "date-fns/locale"
 import { CalendarIcon, CheckCircle2 } from "lucide-react"
 import { cn } from "@/lib/utils"
 
@@ -32,9 +33,9 @@ export default function AppointmentPage() {
       <section className="bg-primary/10 py-12 md:py-16">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl font-bold mb-4">Book an Appointment</h1>
+            <h1 className="text-4xl font-bold mb-4">Varaa Aika</h1>
             <p className="text-lg text-muted-foreground">
-              Schedule a visit for your pet with our experienced veterinary team.
+              Varaa käynti lemmikillesi kokeneen eläinlääkäritiimimme kanssa.
             </p>
           </div>
         </div>
@@ -47,106 +48,106 @@ export default function AppointmentPage() {
             {!submitted ? (
               <Card>
                 <CardHeader>
-                  <CardTitle>Request an Appointment</CardTitle>
+                  <CardTitle>Pyydä Ajanvarausta</CardTitle>
                   <CardDescription>
-                    Fill out the form below to request an appointment. We'll contact you to confirm the details.
+                    Täytä alla oleva lomake pyytääksesi ajanvarausta. Otamme sinuun yhteyttä vahvistaaksemme tiedot.
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
                   <form onSubmit={handleSubmit} className="space-y-6">
                     <div className="space-y-4">
-                      <h3 className="text-lg font-medium">Your Information</h3>
+                      <h3 className="text-lg font-medium">Yhteystietosi</h3>
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div className="space-y-2">
-                          <Label htmlFor="firstName">First Name</Label>
+                          <Label htmlFor="firstName">Etunimi</Label>
                           <Input id="firstName" required />
                         </div>
                         <div className="space-y-2">
-                          <Label htmlFor="lastName">Last Name</Label>
+                          <Label htmlFor="lastName">Sukunimi</Label>
                           <Input id="lastName" required />
                         </div>
                       </div>
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div className="space-y-2">
-                          <Label htmlFor="email">Email</Label>
+                          <Label htmlFor="email">Sähköposti</Label>
                           <Input id="email" type="email" required />
                         </div>
                         <div className="space-y-2">
-                          <Label htmlFor="phone">Phone</Label>
+                          <Label htmlFor="phone">Puhelin</Label>
                           <Input id="phone" type="tel" required />
                         </div>
                       </div>
                     </div>
 
                     <div className="space-y-4">
-                      <h3 className="text-lg font-medium">Pet Information</h3>
+                      <h3 className="text-lg font-medium">Lemmikin Tiedot</h3>
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div className="space-y-2">
-                          <Label htmlFor="petName">Pet's Name</Label>
+                          <Label htmlFor="petName">Lemmikin Nimi</Label>
                           <Input id="petName" required />
                         </div>
                         <div className="space-y-2">
-                          <Label htmlFor="petType">Pet Type</Label>
+                          <Label htmlFor="petType">Lemmikin Tyyppi</Label>
                           <Select>
                             <SelectTrigger id="petType">
-                              <SelectValue placeholder="Select pet type" />
+                              <SelectValue placeholder="Valitse lemmikin tyyppi" />
                             </SelectTrigger>
                             <SelectContent>
-                              <SelectItem value="dog">Dog</SelectItem>
-                              <SelectItem value="cat">Cat</SelectItem>
-                              <SelectItem value="bird">Bird</SelectItem>
-                              <SelectItem value="reptile">Reptile</SelectItem>
-                              <SelectItem value="other">Other</SelectItem>
+                              <SelectItem value="dog">Koira</SelectItem>
+                              <SelectItem value="cat">Kissa</SelectItem>
+                              <SelectItem value="bird">Lintu</SelectItem>
+                              <SelectItem value="reptile">Matelija</SelectItem>
+                              <SelectItem value="other">Muu</SelectItem>
                             </SelectContent>
                           </Select>
                         </div>
                       </div>
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div className="space-y-2">
-                          <Label htmlFor="petBreed">Breed</Label>
+                          <Label htmlFor="petBreed">Rotu</Label>
                           <Input id="petBreed" />
                         </div>
                         <div className="space-y-2">
-                          <Label htmlFor="petAge">Age</Label>
+                          <Label htmlFor="petAge">Ikä</Label>
                           <Input id="petAge" />
                         </div>
                       </div>
                       <div className="space-y-2">
-                        <Label>Is this a new patient?</Label>
+                        <Label>Onko tämä uusi potilas?</Label>
                         <RadioGroup defaultValue="no" className="flex space-x-4">
                           <div className="flex items-center space-x-2">
                             <RadioGroupItem value="yes" id="new-yes" />
-                            <Label htmlFor="new-yes">Yes</Label>
+                            <Label htmlFor="new-yes">Kyllä</Label>
                           </div>
                           <div className="flex items-center space-x-2">
                             <RadioGroupItem value="no" id="new-no" />
-                            <Label htmlFor="new-no">No</Label>
+                            <Label htmlFor="new-no">Ei</Label>
                           </div>
                         </RadioGroup>
                       </div>
                     </div>
 
                     <div className="space-y-4">
-                      <h3 className="text-lg font-medium">Appointment Details</h3>
+                      <h3 className="text-lg font-medium">Ajanvarauksen Tiedot</h3>
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div className="space-y-2">
-                          <Label htmlFor="appointmentType">Appointment Type</Label>
+                          <Label htmlFor="appointmentType">Ajanvarauksen Tyyppi</Label>
                           <Select>
                             <SelectTrigger id="appointmentType">
-                              <SelectValue placeholder="Select type" />
+                              <SelectValue placeholder="Valitse tyyppi" />
                             </SelectTrigger>
                             <SelectContent>
-                              <SelectItem value="wellness">Wellness Exam</SelectItem>
-                              <SelectItem value="vaccination">Vaccination</SelectItem>
-                              <SelectItem value="illness">Sick Visit</SelectItem>
-                              <SelectItem value="surgery">Surgery Consultation</SelectItem>
-                              <SelectItem value="dental">Dental Care</SelectItem>
-                              <SelectItem value="other">Other</SelectItem>
+                              <SelectItem value="wellness">Terveystarkastus</SelectItem>
+                              <SelectItem value="vaccination">Rokotus</SelectItem>
+                              <SelectItem value="illness">Sairaskäynti</SelectItem>
+                              <SelectItem value="surgery">Kirurginen Konsultaatio</SelectItem>
+                              <SelectItem value="dental">Hammashoito</SelectItem>
+                              <SelectItem value="other">Muu</SelectItem>
                             </SelectContent>
                           </Select>
                         </div>
                         <div className="space-y-2">
-                          <Label>Preferred Date</Label>
+                          <Label>Toivottu Päivämäärä</Label>
                           <Popover>
                             <PopoverTrigger asChild>
                               <Button
@@ -157,7 +158,7 @@ export default function AppointmentPage() {
                                 )}
                               >
                                 <CalendarIcon className="mr-2 h-4 w-4" />
-                                {date ? format(date, "PPP") : <span>Select a date</span>}
+                                {date ? format(date, "PPP", { locale: fi }) : <span>Valitse päivämäärä</span>}
                               </Button>
                             </PopoverTrigger>
                             <PopoverContent className="w-auto p-0">
@@ -166,6 +167,7 @@ export default function AppointmentPage() {
                                 selected={date}
                                 onSelect={setDate}
                                 initialFocus
+                                locale={fi}
                                 disabled={(date) => {
                                   // Disable past dates and weekends in this example
                                   const today = new Date()
@@ -179,30 +181,30 @@ export default function AppointmentPage() {
                         </div>
                       </div>
                       <div className="space-y-2">
-                        <Label htmlFor="preferredTime">Preferred Time</Label>
+                        <Label htmlFor="preferredTime">Toivottu Aika</Label>
                         <Select>
                           <SelectTrigger id="preferredTime">
-                            <SelectValue placeholder="Select time" />
+                            <SelectValue placeholder="Valitse aika" />
                           </SelectTrigger>
                           <SelectContent>
-                            <SelectItem value="morning">Morning (9AM - 12PM)</SelectItem>
-                            <SelectItem value="afternoon">Afternoon (1PM - 4PM)</SelectItem>
-                            <SelectItem value="evening">Evening (4PM - 6PM)</SelectItem>
+                            <SelectItem value="morning">Aamu (9-12)</SelectItem>
+                            <SelectItem value="afternoon">Iltapäivä (13-16)</SelectItem>
+                            <SelectItem value="evening">Ilta (16-18)</SelectItem>
                           </SelectContent>
                         </Select>
                       </div>
                       <div className="space-y-2">
-                        <Label htmlFor="reason">Reason for Visit</Label>
+                        <Label htmlFor="reason">Käynnin Syy</Label>
                         <Textarea
                           id="reason"
-                          placeholder="Please describe the reason for your visit and any symptoms your pet is experiencing."
+                          placeholder="Kuvaile käyntisi syy ja mahdolliset oireet, joita lemmikillä on."
                           className="min-h-[100px]"
                         />
                       </div>
                     </div>
 
                     <Button type="submit" className="w-full">
-                      Request Appointment
+                      Pyydä Ajanvarausta
                     </Button>
                   </form>
                 </CardContent>
@@ -212,13 +214,13 @@ export default function AppointmentPage() {
                 <CardContent>
                   <div className="flex flex-col items-center space-y-4">
                     <CheckCircle2 className="h-16 w-16 text-primary" />
-                    <h2 className="text-2xl font-bold">Appointment Request Submitted!</h2>
+                    <h2 className="text-2xl font-bold">Ajanvarauspyyntö Lähetetty!</h2>
                     <p className="text-muted-foreground max-w-md mx-auto">
-                      Thank you for requesting an appointment. Our team will review your information and contact you
-                      within 24 hours to confirm your appointment details.
+                      Kiitos ajanvarauspyynnöstäsi. Tiimimme käy läpi tietosi ja ottaa sinuun yhteyttä 24 tunnin
+                      kuluessa vahvistaakseen ajanvarauksesi tiedot.
                     </p>
                     <Button asChild className="mt-4">
-                      <a href="/">Return to Home</a>
+                      <a href="/">Palaa Etusivulle</a>
                     </Button>
                   </div>
                 </CardContent>
@@ -232,39 +234,39 @@ export default function AppointmentPage() {
       <section className="py-16 bg-secondary/50">
         <div className="container">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl font-bold mb-6 text-center">Appointment Information</h2>
+            <h2 className="text-2xl font-bold mb-6 text-center">Ajanvaraustietoja</h2>
             <div className="grid md:grid-cols-2 gap-8">
               <Card>
                 <CardHeader>
-                  <CardTitle>Office Hours</CardTitle>
+                  <CardTitle>Aukioloajat</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-2">
                     <li className="flex justify-between">
-                      <span>Monday - Friday</span>
-                      <span>8:00 AM - 6:00 PM</span>
+                      <span>Maanantai - Perjantai</span>
+                      <span>8:00 - 18:00</span>
                     </li>
                     <li className="flex justify-between">
-                      <span>Saturday</span>
-                      <span>9:00 AM - 2:00 PM</span>
+                      <span>Lauantai</span>
+                      <span>9:00 - 14:00</span>
                     </li>
                     <li className="flex justify-between">
-                      <span>Sunday</span>
-                      <span>Closed</span>
+                      <span>Sunnuntai</span>
+                      <span>Suljettu</span>
                     </li>
                   </ul>
                 </CardContent>
               </Card>
               <Card>
                 <CardHeader>
-                  <CardTitle>What to Bring</CardTitle>
+                  <CardTitle>Mitä Tuoda Mukana</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-2 list-disc pl-5">
-                    <li>Your pet's medical records (for new patients)</li>
-                    <li>Current medications your pet is taking</li>
-                    <li>A fresh stool sample (if requested)</li>
-                    <li>Any questions you have for the veterinarian</li>
+                    <li>Lemmikkisi terveystiedot (uusille potilaille)</li>
+                    <li>Nykyiset lääkkeet, joita lemmikkisi käyttää</li>
+                    <li>Tuore ulostenäyte (jos pyydetty)</li>
+                    <li>Kysymykset, joita sinulla on eläinlääkärille</li>
                   </ul>
                 </CardContent>
               </Card>

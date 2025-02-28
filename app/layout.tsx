@@ -8,8 +8,8 @@ import Footer from "@/components/footer"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "PawCare Veterinary Clinic",
-  description: "Professional veterinary care for your beloved pets",
+  title: "TassuHoito Eläinklinikka",
+  description: "Ammattitaitoista eläinlääkäripalvelua rakkaille lemmikeillesi",
     generator: 'v0.dev'
 }
 
@@ -19,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="fi">
       <body className={inter.className}>
         <Navbar />
         <main className="min-h-screen">{children}</main>

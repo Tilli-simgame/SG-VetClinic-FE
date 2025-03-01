@@ -48,7 +48,7 @@ export default function AppointmentPage() {
             {!submitted ? (
               <Card>
                 <CardHeader>
-                  <CardTitle>Pyydä Ajanvarausta</CardTitle>
+                  <CardTitle>Varaa aika</CardTitle>
                   <CardDescription>
                     Täytä alla oleva lomake pyytääksesi ajanvarausta. Otamme sinuun yhteyttä vahvistaaksemme tiedot.
                   </CardDescription>

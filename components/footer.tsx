@@ -7,9 +7,9 @@ export default function Footer() {
       <div className="container py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="space-y-4">
-            <h3 className="text-xl font-bold">TassuHoito</h3>
+            <h3 className="text-xl font-bold">SimeVet</h3>
             <p className="text-sm opacity-90">
-              Ammattitaitoista eläinlääkäripalvelua rakkaille lemmikeillesi vuodesta 2005.
+              Ammattitaitoista eläinlääkäripalvelua rakkaille lemmikeillesi vuodesta 2025.
             </p>
             <div className="flex space-x-4">
               <Link href="#" className="hover:text-accent">
@@ -82,12 +82,12 @@ export default function Footer() {
               <p>Lemmikkitie 123</p>
               <p>00100 Helsinki</p>
               <p>Puhelin: 050-123-4567</p>
-              <p>Sähköposti: info@tassuhoito.fi</p>
+              <p>Sähköposti: info@simvet.fi</p>
             </address>
           </div>
         </div>
         <div className="border-t border-primary-foreground/20 mt-8 pt-8 text-sm text-center">
-          <p>© {new Date().getFullYear()} TassuHoito Eläinklinikka. Kaikki oikeudet pidätetään.</p>
+          <p>© {new Date().getFullYear()} SimVet Eläinklinikka. Kaikki oikeudet pidätetään.</p>
         </div>
       </div>
     </footer>

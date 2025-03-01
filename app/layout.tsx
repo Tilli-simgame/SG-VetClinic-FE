@@ -8,7 +8,7 @@ import Footer from "@/components/footer"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "TassuHoito Eläinklinikka",
+  title: "SimVet Eläinklinikka",
   description: "Ammattitaitoista eläinlääkäripalvelua rakkaille lemmikeillesi",
     generator: 'v0.dev'
 }

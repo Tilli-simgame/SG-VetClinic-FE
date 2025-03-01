@@ -33,7 +33,7 @@ export default function AppointmentPage() {
       <section className="bg-primary/10 py-12 md:py-16">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl font-bold mb-4">Varaa Aika</h1>
+            <h1 className="text-4xl font-bold mb-4">Varaa aika</h1>
             <p className="text-lg text-muted-foreground">
               Varaa käynti lemmikillesi kokeneen eläinlääkäritiimimme kanssa.
             </p>
@@ -59,38 +59,28 @@ export default function AppointmentPage() {
                       <h3 className="text-lg font-medium">Yhteystietosi</h3>
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div className="space-y-2">
-                          <Label htmlFor="firstName">Etunimi</Label>
+                          <Label htmlFor="firstName">Nimi</Label>
                           <Input id="firstName" required />
                         </div>
                         <div className="space-y-2">
-                          <Label htmlFor="lastName">Sukunimi</Label>
-                          <Input id="lastName" required />
-                        </div>
-                      </div>
-                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <div className="space-y-2">
                           <Label htmlFor="email">Sähköposti</Label>
                           <Input id="email" type="email" required />
-                        </div>
-                        <div className="space-y-2">
-                          <Label htmlFor="phone">Puhelin</Label>
-                          <Input id="phone" type="tel" required />
                         </div>
                       </div>
                     </div>
 
                     <div className="space-y-4">
-                      <h3 className="text-lg font-medium">Lemmikin Tiedot</h3>
+                      <h3 className="text-lg font-medium">Potilaan tiedot</h3>
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div className="space-y-2">
-                          <Label htmlFor="petName">Lemmikin Nimi</Label>
+                          <Label htmlFor="petName">Nimi</Label>
                           <Input id="petName" required />
                         </div>
                         <div className="space-y-2">
-                          <Label htmlFor="petType">Lemmikin Tyyppi</Label>
+                          <Label htmlFor="petType">Laji</Label>
                           <Select>
                             <SelectTrigger id="petType">
-                              <SelectValue placeholder="Valitse lemmikin tyyppi" />
+                              <SelectValue placeholder="- valitse -" />
                             </SelectTrigger>
                             <SelectContent>
                               <SelectItem value="dog">Koira</SelectItem>
@@ -112,29 +102,16 @@ export default function AppointmentPage() {
                           <Input id="petAge" />
                         </div>
                       </div>
-                      <div className="space-y-2">
-                        <Label>Onko tämä uusi potilas?</Label>
-                        <RadioGroup defaultValue="no" className="flex space-x-4">
-                          <div className="flex items-center space-x-2">
-                            <RadioGroupItem value="yes" id="new-yes" />
-                            <Label htmlFor="new-yes">Kyllä</Label>
-                          </div>
-                          <div className="flex items-center space-x-2">
-                            <RadioGroupItem value="no" id="new-no" />
-                            <Label htmlFor="new-no">Ei</Label>
-                          </div>
-                        </RadioGroup>
-                      </div>
                     </div>
 
                     <div className="space-y-4">
-                      <h3 className="text-lg font-medium">Ajanvarauksen Tiedot</h3>
+                      <h3 className="text-lg font-medium">Ajanvarauksen tiedot</h3>
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div className="space-y-2">
-                          <Label htmlFor="appointmentType">Ajanvarauksen Tyyppi</Label>
+                          <Label htmlFor="appointmentType">Tyyppi</Label>
                           <Select>
                             <SelectTrigger id="appointmentType">
-                              <SelectValue placeholder="Valitse tyyppi" />
+                              <SelectValue placeholder="- valitse -" />
                             </SelectTrigger>
                             <SelectContent>
                               <SelectItem value="wellness">Terveystarkastus</SelectItem>
@@ -147,7 +124,7 @@ export default function AppointmentPage() {
                           </Select>
                         </div>
                         <div className="space-y-2">
-                          <Label>Toivottu Päivämäärä</Label>
+                          <Label>Toivottu päivämäärä</Label>
                           <Popover>
                             <PopoverTrigger asChild>
                               <Button
@@ -158,7 +135,7 @@ export default function AppointmentPage() {
                                 )}
                               >
                                 <CalendarIcon className="mr-2 h-4 w-4" />
-                                {date ? format(date, "PPP", { locale: fi }) : <span>Valitse päivämäärä</span>}
+                                {date ? format(date, "PPP", { locale: fi }) : <span> - valitse -</span>}
                               </Button>
                             </PopoverTrigger>
                             <PopoverContent className="w-auto p-0">
@@ -181,10 +158,10 @@ export default function AppointmentPage() {
                         </div>
                       </div>
                       <div className="space-y-2">
-                        <Label htmlFor="preferredTime">Toivottu Aika</Label>
+                        <Label htmlFor="preferredTime">Toivottu aika</Label>
                         <Select>
                           <SelectTrigger id="preferredTime">
-                            <SelectValue placeholder="Valitse aika" />
+                            <SelectValue placeholder="- valitse -" />
                           </SelectTrigger>
                           <SelectContent>
                             <SelectItem value="morning">Aamu (9-12)</SelectItem>
@@ -194,7 +171,7 @@ export default function AppointmentPage() {
                         </Select>
                       </div>
                       <div className="space-y-2">
-                        <Label htmlFor="reason">Käynnin Syy</Label>
+                        <Label htmlFor="reason">Käynnin syy</Label>
                         <Textarea
                           id="reason"
                           placeholder="Kuvaile käyntisi syy ja mahdolliset oireet, joita lemmikillä on."
@@ -214,13 +191,12 @@ export default function AppointmentPage() {
                 <CardContent>
                   <div className="flex flex-col items-center space-y-4">
                     <CheckCircle2 className="h-16 w-16 text-primary" />
-                    <h2 className="text-2xl font-bold">Ajanvarauspyyntö Lähetetty!</h2>
+                    <h2 className="text-2xl font-bold">Ajanvarauspyyntö lähetetty!</h2>
                     <p className="text-muted-foreground max-w-md mx-auto">
-                      Kiitos ajanvarauspyynnöstäsi. Tiimimme käy läpi tietosi ja ottaa sinuun yhteyttä 24 tunnin
-                      kuluessa vahvistaakseen ajanvarauksesi tiedot.
+                      Kiitos ajanvarauspyynnöstäsi.
                     </p>
                     <Button asChild className="mt-4">
-                      <a href="/">Palaa Etusivulle</a>
+                      <a href="/">Palaa etusivulle</a>
                     </Button>
                   </div>
                 </CardContent>
@@ -259,14 +235,13 @@ export default function AppointmentPage() {
               </Card>
               <Card>
                 <CardHeader>
-                  <CardTitle>Mitä Tuoda Mukana</CardTitle>
+                  <CardTitle>Mitä tuoda mukana</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-2 list-disc pl-5">
                     <li>Lemmikkisi terveystiedot (uusille potilaille)</li>
-                    <li>Nykyiset lääkkeet, joita lemmikkisi käyttää</li>
+                    <li>Käytössä olevien lääkkeiden reseptit</li>
                     <li>Tuore ulostenäyte (jos pyydetty)</li>
-                    <li>Kysymykset, joita sinulla on eläinlääkärille</li>
                   </ul>
                 </CardContent>
               </Card>

@@ -12,14 +12,14 @@ export default function ServicesPage() {
       title: "Terveystarkastukset",
       description: "Kattavat fyysiset tutkimukset lemmikkisi yleisen terveyden arvioimiseksi",
       details:
-        "Perusteelliset terveystarkastuksemme sisältävät elintoimintojen, painon, silmien, korvien, suun, ihon, turkin ja sisäelinten tarkistuksen. Suosittelemme vuosittaisia tarkastuksia aikuisille lemmikeille ja puolivuosittaisia tarkastuksia seniorilemmikeille.",
+        "Perusteelliset terveystarkastuksemme sisältävät elintoimintojen, painon, silmien, korvien, suun, ihon, turkin ja sisäelinten tarkistuksen. Suosittelemme vuosittaisia tarkastuksia aikuisille ja puolivuosittaisia tarkastuksia senioreille.",
       image: "/placeholder.svg?height=300&width=500",
     },
     {
       id: "vaccinations",
       icon: <Syringe className="h-8 w-8 text-primary" />,
       title: "Rokotukset",
-      description: "Perus- ja elämäntaparokotukset lemmikkisi suojaamiseksi yleisiltä sairauksilta",
+      description: "Kaikki rokotukset lemmikkisi suojaamiseksi yleisiltä sairauksilta",
       details:
         "Tarjoamme kaikki perusrokotukset koirille ja kissoille sekä lisärokotuksia lemmikkisi elämäntavan ja riskitekijöiden perusteella. Eläinlääkärimme luovat yksilöllisen rokotusaikataulun lemmikillesi.",
       image: "/placeholder.svg?height=300&width=500",
@@ -46,9 +46,9 @@ export default function ServicesPage() {
       id: "preventive",
       icon: <Heart className="h-8 w-8 text-primary" />,
       title: "Ennaltaehkäisevä Hoito",
-      description: "Loisten ehkäisy ja torjunta terveemmälle lemmikille",
+      description: "Loisten ehkäisy ja torjunta lemmikille",
       details:
-        "Tarjoamme kattavia loisten ehkäisyohjelmia, mukaan lukien sydänmadon, kirppujen, punkkien ja suolistoloisten torjunta. Tiimimme suosittelee parhaita ennaltaehkäiseviä tuotteita lemmikkisi tarpeiden ja elämäntavan perusteella.",
+        "Tarjoamme kattavia loisten ehkäisyohjelmia, mukaan lukien matojen, kirppujen, punkkien ja suolistoloisten torjunta. Tiimimme suosittelee parhaita ennaltaehkäiseviä tuotteita lemmikkisi tarpeiden ja elämäntavan perusteella.",
       image: "/placeholder.svg?height=300&width=500",
     },
     {
@@ -63,10 +63,10 @@ export default function ServicesPage() {
     {
       id: "senior",
       icon: <PawPrint className="h-8 w-8 text-primary" />,
-      title: "Seniorieläinten Hoito",
+      title: "Senioreiden Hoito",
       description: "Erikoistunut hoito ikääntyville lemmikeille elämänlaadun ylläpitämiseksi",
       details:
-        "Lemmikkien ikääntyessä ne tarvitsevat erikoistuneempaa hoitoa. Seniorieläinohjelmiimme kuuluvat tiheämmät tarkastukset, kattavat verikokeet ja ikään liittyvien sairauksien hallinta pitääksemme vanhemman lemmikkisi mukavana ja terveenä.",
+        "Lemmikkien ikääntyessä ne tarvitsevat erikoistuneempaa hoitoa. Senioriohjelmiimme kuuluvat tiheämmät tarkastukset, kattavat verikokeet ja ikään liittyvien sairauksien hallinta pitääksemme vanhemman lemmikkisi mukavana ja terveenä.",
       image: "/placeholder.svg?height=300&width=500",
     },
     {
@@ -75,7 +75,7 @@ export default function ServicesPage() {
       title: "Apteekkipalvelut",
       description: "Kätevä pääsy lääkkeisiin ja reseptiruokavalioihin",
       details:
-        "Sisäinen apteekkimme tarjoaa välittömän pääsyn lääkkeisiin, joita lemmikkisi saattaa tarvita. Tarjoamme myös verkossa reseptien uusimisen ja meillä on valikoima reseptiruokavalioita erityisten terveyshuolien käsittelemiseksi.",
+        "Sisäinen apteekkimme tarjoaa välittömän pääsyn lääkkeisiin, joita lemmikkisi saattaa tarvita. Tarjoamme myös reseptien uusimisen ja meillä on valikoima reseptiruokavalioita erityisten terveyshuolien käsittelemiseksi.",
       image: "/placeholder.svg?height=300&width=500",
     },
   ]
@@ -92,7 +92,7 @@ export default function ServicesPage() {
               erikoishoitoihin.
             </p>
             <Button size="lg" asChild>
-              <Link href="/appointment">Varaa Aika</Link>
+              <Link href="/appointment">Varaa aika</Link>
             </Button>
           </div>
         </div>
@@ -126,7 +126,7 @@ export default function ServicesPage() {
                   <p className="text-lg text-muted-foreground mb-4">{service.description}</p>
                   <p className="mb-6">{service.details}</p>
                   <Button asChild>
-                    <Link href="/appointment">Varaa Tämä Palvelu</Link>
+                    <Link href="/appointment">Varaa tämä palvelu</Link>
                   </Button>
                 </div>
               </div>
@@ -147,9 +147,8 @@ export default function ServicesPage() {
                 </CardHeader>
                 <CardContent>
                   <p>
-                    Suosittelemme vuosittaisia terveystarkastuksia aikuisille lemmikeille ja puolivuosittaisia
-                    tarkastuksia seniorilemmikeille (yleensä yli 7-vuotiaat koirat ja yli 10-vuotiaat kissat). Pennut ja
-                    kissanpennut tarvitsevat tiheämpiä käyntejä rokotuksia ja kehityksen seurantaa varten.
+                    Suosittelemme vuosittaisia terveystarkastuksia aikuisille ja puolivuosittaisia
+                    tarkastuksia seniorilemmikeille (yleensä yli 7-vuotiaat koirat ja yli 10-vuotiaat kissat). Pennut tarvitsevat tiheämpiä käyntejä rokotuksia ja kehityksen seurantaa varten.
                   </p>
                 </CardContent>
               </Card>
@@ -183,28 +182,14 @@ export default function ServicesPage() {
                 </CardHeader>
                 <CardContent>
                   <p>
-                    Tarjoamme kiireellistä hoitoa normaalien aukioloaikojemme puitteissa. Aukioloaikojen ulkopuolisissa
-                    hätätilanteissa teemme tiivistä yhteistyötä paikallisten päivystysklinikkojen kanssa ja voimme
-                    ohjata sinut lähimpään toimipisteeseen. Soita meille myös aukioloaikojen ulkopuolella saadaksesi
+                    Tarjoamme hoitoa normaalien aukioloaikojemme puitteissa. Aukioloaikojen ulkopuolella meillä on 24/7 päivystysvalmius jolloin 
+                    vastaanotamme potilaita vain kiireelisissä ja hätätilanteissa. Soita meille myös aukioloaikojen ulkopuolella saadaksesi
                     ohjeita hätätilanteissa.
                   </p>
                 </CardContent>
               </Card>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-16 bg-primary text-primary-foreground">
-        <div className="container text-center">
-          <h2 className="text-3xl font-bold mb-6">Valmis Varaamaan Käynnin?</h2>
-          <p className="max-w-2xl mx-auto mb-8 opacity-90">
-            Tarvitsipa lemmikkisi rutiininomaista tarkastusta tai erikoishoitoa, tiimimme on täällä auttamassa.
-          </p>
-          <Button size="lg" variant="secondary" asChild>
-            <Link href="/appointment">Varaa Aika</Link>
-          </Button>
         </div>
       </section>
     </div>

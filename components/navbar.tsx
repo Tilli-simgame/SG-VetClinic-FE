@@ -9,7 +9,7 @@ export default function Navbar() {
       <div className="container flex h-16 items-center justify-between">
         <div className="flex items-center gap-2">
           <Link href="/" className="flex items-center space-x-2">
-            <span className="text-xl font-bold text-primary">TassuHoito</span>
+            <span className="text-xl font-bold text-primary">SimVet</span>
           </Link>
           <nav className="hidden md:flex gap-6 ml-6">
             <Link href="/" className="text-sm font-medium transition-colors hover:text-primary">
@@ -32,7 +32,7 @@ export default function Navbar() {
             <span className="text-sm font-medium">050-123-4567</span>
           </div>
           <Button asChild className="hidden md:inline-flex">
-            <Link href="/appointment">Varaa Nyt</Link>
+            <Link href="/appointment">Varaa nyt</Link>
           </Button>
           <Sheet>
             <SheetTrigger asChild>

@@ -50,7 +50,7 @@ export default function AppointmentPage() {
                 <CardHeader>
                   <CardTitle>Varaa aika</CardTitle>
                   <CardDescription>
-                    Täytä alla oleva lomake varataksesi ajan. Otamme sinuun yhteyttä vahvistaaksemme tiedot.
+                    Täytä alla oleva lomake varataksesi ajan.
                   </CardDescription>
                 </CardHeader>
                 <CardContent>

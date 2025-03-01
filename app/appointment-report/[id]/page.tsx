@@ -23,7 +23,7 @@ const mockAppointmentReport = {
   reason: "Vuosittainen terveystarkastus",
   diagnosis: "Yleinen terveys hyvä, lievää hammaskiveä",
   treatment: "Hammaskiven poisto suoritettu, suositeltu säännöllistä hampaiden harjausta",
-  medications: [{ name: "Dentastix", dosage: "1 päivässä", duration: "Jatkuva" }],
+  medications: [{ name: "LÄÄKE", dosage: "1 päivässä", duration: "Jatkuva" }],
   followUp: "Seuraava tarkastus 6 kuukauden kuluttua",
   notes:
     "Musti on yleisesti ottaen terve ja hyväkuntoinen. Omistajaa neuvottu tarkkailemaan Mustin ruokavaliota painonhallinnan vuoksi.",
@@ -34,8 +34,8 @@ const mockAppointmentReport = {
     respiratoryRate: "20 hengitystä/min",
   },
   vaccinations: [
-    { name: "Rabies", date: "2024-09-01", nextDue: "2025-09-01" },
-    { name: "DHPP", date: "2024-09-01", nextDue: "2025-09-01" },
+    { name: "ROKOTUS 1", date: "2024-09-01", nextDue: "2025-09-01" },
+    { name: "ROKOTUS 2", date: "2024-09-01", nextDue: "2025-09-01" },
   ],
 }
 

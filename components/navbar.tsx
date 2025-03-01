@@ -9,7 +9,7 @@ export default function Navbar() {
       <div className="container flex h-16 items-center justify-between">
         <div className="flex items-center gap-2">
           <Link href="/" className="flex items-center space-x-2">
-            <span className="text-xl font-bold text-primary">SimVet</span>
+            <span className="text-xl font-bold text-primary">Virtuaalieläinten Eläinklinikka Tietokanta</span>
           </Link>
           <nav className="hidden md:flex gap-6 ml-6">
             <Link href="/" className="text-sm font-medium transition-colors hover:text-primary">
@@ -18,22 +18,12 @@ export default function Navbar() {
             <Link href="/services" className="text-sm font-medium transition-colors hover:text-primary">
               Palvelut
             </Link>
-            <Link href="/staff" className="text-sm font-medium transition-colors hover:text-primary">
-              Henkilökunta
-            </Link>
-            <Link href="/appointment" className="text-sm font-medium transition-colors hover:text-primary">
-              Varaa Aika
+            <Link href="/clinics" className="text-sm font-medium transition-colors hover:text-primary">
+              Klinikat
             </Link>
           </nav>
         </div>
         <div className="flex items-center gap-4">
-          <div className="hidden md:flex items-center gap-2">
-            <Phone className="h-4 w-4 text-primary" />
-            <span className="text-sm font-medium">050-123-4567</span>
-          </div>
-          <Button asChild className="hidden md:inline-flex">
-            <Link href="/appointment">Varaa nyt</Link>
-          </Button>
           <Sheet>
             <SheetTrigger asChild>
               <Button variant="outline" size="icon" className="md:hidden">
@@ -49,11 +39,8 @@ export default function Navbar() {
                 <Link href="/services" className="text-lg font-medium transition-colors hover:text-primary">
                   Palvelut
                 </Link>
-                <Link href="/staff" className="text-lg font-medium transition-colors hover:text-primary">
-                  Henkilökunta
-                </Link>
-                <Link href="/appointment" className="text-lg font-medium transition-colors hover:text-primary">
-                  Varaa Aika
+                <Link href="/clinics" className="text-lg font-medium transition-colors hover:text-primary">
+                  Klinikat
                 </Link>
                 <div className="flex items-center gap-2 mt-4">
                   <Phone className="h-4 w-4 text-primary" />

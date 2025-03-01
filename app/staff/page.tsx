@@ -11,7 +11,7 @@ export default function StaffPage() {
       title: "Johtava Eläinlääkäri",
       image: "/placeholder.svg?height=400&width=400",
       bio: "ELL Järvinen on harjoittanut eläinlääketiedettä yli 15 vuotta. Hän sai eläinlääketieteen tohtorin tutkintonsa Helsingin yliopistosta ja on erityisen kiinnostunut sisätaudeista ja ennaltaehkäisevästä hoidosta. Hän jakaa kotinsa kahden rescue-koiran ja kissan kanssa.",
-      specialties: ["Sisätaudit", "Ennaltaehkäisevä hoito", "Seniorieläinten hoito"],
+      specialties: ["Sisätaudit", "Ennaltaehkäisevä Hoito", "Seniorieläinten Hoito"],
       social: {
         linkedin: "#",
         facebook: "#",
@@ -23,7 +23,7 @@ export default function StaffPage() {
       title: "Eläinkirurgi",
       image: "/placeholder.svg?height=400&width=400",
       bio: "ELL Korhonen on erikoistunut ortopedisiin ja pehmytkudosleikkauksiin. Saatuaan eläinlääkärin tutkintonsa Helsingin yliopistosta hän suoritti kirurgisen erikoistumisen Uppsalan yliopistossa. Hän on intohimoinen tarjoamaan korkealaatuisinta kirurgista hoitoa lemmikeille.",
-      specialties: ["Ortopedinen kirurgia", "Pehmytkudoskirurgia", "Minimaalisesti invasiiviset toimenpiteet"],
+      specialties: ["Ortopedinen Kirurgia", "Pehmytkudoskirurgia", "Minimaalisesti Invasiiviset Toimenpiteet"],
       social: {
         linkedin: "#",
         facebook: "#",
@@ -34,7 +34,7 @@ export default function StaffPage() {
       name: "ELL Emilia Rodriguez",
       title: "Eläinlääkäri",
       image: "/placeholder.svg?height=400&width=400",
-      bio: "ELL Rodriguez liittyi tiimiimme valmistuttuaan Helsingin yliopistosta. Hänellä on erityinen kiinnostus dermatologiaan ja hammasterveyteen. Hänen lempeä lähestymistapansa tekee hänestä suosikin ahdistuneiden lemmikkien ja heidän omistajiensa keskuudessa.",
+      bio: "ELL Rodriguez liittyi tiimiimme valmistuttuaan Helsingin yliopistosta. Hänellä on erityinen kiinnostus dermatologiaan ja hammasterveyteen. Hänen lempeä lähestymistapansa tekee hänestä suosikin ahdistuneiden virtuaalilemmikkien ja heidän omistajiensa keskuudessa.",
       specialties: ["Dermatologia", "Hammashoito", "Käyttäytymisneuvonta"],
       social: {
         linkedin: "#",
@@ -59,13 +59,13 @@ export default function StaffPage() {
   const staff = [
     {
       name: "Liisa Mäkinen",
-      title: "Klinikan omistaja/johtaja",
+      title: "Klinikan Johtaja",
       image: "/placeholder.svg?height=300&width=300",
       bio: "Liisa varmistaa, että klinikkamme toimii sujuvasti ja tehokkaasti. Liiketalouden taustalla ja eläinrakkaudella varustettuna hän on täydellinen henkilö johtamaan päivittäisiä toimintojamme.",
     },
     {
       name: "Kalle Nieminen",
-      title: "Eläintenhoitaja",
+      title: "Vastaava Eläintenhoitaja",
       image: "/placeholder.svg?height=300&width=300",
       bio: "Kalle on ollut sertifioitu eläintenhoitaja 8 vuotta. Hän avustaa leikkauksissa, hammastoimenpiteissä ja varmistaa, että potilaamme saavat parasta hoitoa oleskelunsa aikana.",
     },
@@ -77,13 +77,13 @@ export default function StaffPage() {
     },
     {
       name: "Aleksi Jokinen",
-      title: "Eläintenhoitajan avustaja",
+      title: "Eläintenhoitajan Avustaja",
       image: "/placeholder.svg?height=300&width=300",
-      bio: "Aleksi avustaa eläinlääkäreitämme ja hoitajiamme tutkimuksissa ja hoidoissa. Hän opiskelee tällä hetkellä ja suorittaa meillä harjoitustaan.",
+      bio: "Aleksi avustaa eläinlääkäreitämme ja hoitajiamme tutkimuksissa ja hoidoissa. Hän opiskelee parhaillaan eläintenhoitajan sertifikaattia.",
     },
     {
       name: "Olivia Salonen",
-      title: "Vastaanotto",
+      title: "Asiakaspalvelukoordinaattori",
       image: "/placeholder.svg?height=300&width=300",
       bio: "Olivia on usein ensimmäinen ystävällinen kasvo, jonka näet klinikallamme. Hän hallinnoi ajanvarauksia, vastaa kysymyksiin ja varmistaa positiivisen kokemuksen kaikille asiakkaillemme.",
     },
@@ -101,7 +101,7 @@ export default function StaffPage() {
       <section className="bg-primary/10 py-12 md:py-16">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl font-bold mb-4">Tutustu tiimiimme</h1>
+            <h1 className="text-4xl font-bold mb-4">Tutustu Tiimiimme</h1>
             <p className="text-lg text-muted-foreground">
               Myötätuntoinen ja taitava tiimimme on omistautunut tarjoamaan korkealaatuisinta hoitoa rakkaille
               lemmikeillesi.
@@ -183,15 +183,28 @@ export default function StaffPage() {
       <section className="py-16 bg-white">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-4">Liity tiimiimme</h2>
+            <h2 className="text-3xl font-bold mb-4">Liity Tiimiimme</h2>
             <p className="text-lg text-muted-foreground mb-6">
-              Etsimme aina intohimoisia, taitavia ammattilaisia liittymään klinikallemme. Jos rakastat eläimiä
-              ja olet valmis auttamaan, haluaisimme kuulla sinusta.
+              Etsimme aina intohimoisia, taitavia ammattilaisia liittymään eläinlääkäriperheesemme. Jos rakastat eläimiä
+              ja haluat tehdä eron niiden elämässä, haluaisimme kuulla sinusta.
             </p>
             <Button size="lg" asChild>
-              <Link href="/careers">Katso avoimet työpaikat</Link>
+              <Link href="/careers">Katso Avoimet Työpaikat</Link>
             </Button>
           </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-16 bg-primary text-primary-foreground">
+        <div className="container text-center">
+          <h2 className="text-3xl font-bold mb-6">Tapaa Tiimimme Henkilökohtaisesti</h2>
+          <p className="max-w-2xl mx-auto mb-8 opacity-90">
+            Varaa aika tänään ja koe myötätuntoinen hoitomme omakohtaisesti.
+          </p>
+          <Button size="lg" variant="secondary" asChild>
+            <Link href="/appointment">Varaa Aika</Link>
+          </Button>
         </div>
       </section>
     </div>

@@ -7,24 +7,10 @@ export default function Footer() {
       <div className="container py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="space-y-4">
-            <h3 className="text-xl font-bold">SimeVet</h3>
+            <h3 className="text-xl font-bold">Virtuaalieläinten Eläinklinikka Tietokanta</h3>
             <p className="text-sm opacity-90">
-              Ammattitaitoista eläinlääkäripalvelua rakkaille lemmikeillesi vuodesta 2025.
-            </p>
-            <div className="flex space-x-4">
-              <Link href="#" className="hover:text-accent">
-                <Facebook className="h-5 w-5" />
-                <span className="sr-only">Facebook</span>
-              </Link>
-              <Link href="#" className="hover:text-accent">
-                <Twitter className="h-5 w-5" />
-                <span className="sr-only">Twitter</span>
-              </Link>
-              <Link href="#" className="hover:text-accent">
-                <Instagram className="h-5 w-5" />
-                <span className="sr-only">Instagram</span>
-              </Link>
-            </div>
+              Virtuaalisten ELäinklinikoiden Tietokanta vuodesta 2025.
+            </p>  
           </div>
           <div>
             <h3 className="text-lg font-semibold mb-4">Pikalinkit</h3>
@@ -40,13 +26,8 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/staff" className="hover:text-accent">
-                  Henkilökunta
-                </Link>
-              </li>
-              <li>
-                <Link href="/appointment" className="hover:text-accent">
-                  Varaa Aika
+                <Link href="/clinics" className="hover:text-accent">
+                  Klinikat
                 </Link>
               </li>
             </ul>
@@ -79,15 +60,13 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4">Ota Yhteyttä</h3>
             <address className="not-italic text-sm space-y-2">
-              <p>Lemmikkitie 123</p>
-              <p>00100 Helsinki</p>
-              <p>Puhelin: 050-123-4567</p>
-              <p>Sähköposti: info@simvet.fi</p>
+              <p>Virtuaalimaailma</p>
+              <p>Sähköposti: virtuaali@proton.me</p>
             </address>
           </div>
         </div>
         <div className="border-t border-primary-foreground/20 mt-8 pt-8 text-sm text-center">
-          <p>© {new Date().getFullYear()} SimVet Eläinklinikka. Kaikki oikeudet pidätetään.</p>
+          <p>© {new Date().getFullYear()} Virtuaalieläinten Eläinklinikka Tietokanta. Kaikki sivuilla oleva on mielikuvitusta.</p>
         </div>
       </div>
     </footer>

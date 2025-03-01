@@ -10,24 +10,24 @@ export default function ServicesPage() {
       id: "wellness",
       icon: <Stethoscope className="h-8 w-8 text-primary" />,
       title: "Terveystarkastukset",
-      description: "Kattavat fyysiset tutkimukset lemmikkisi yleisen terveyden arvioimiseksi",
+      description: "Kattavat fyysiset tutkimukset virtuaalilemmikkisi yleisen terveyden arvioimiseksi",
       details:
-        "Perusteelliset terveystarkastuksemme sisältävät elintoimintojen, painon, silmien, korvien, suun, ihon, turkin ja sisäelinten tarkistuksen. Suosittelemme vuosittaisia tarkastuksia aikuisille ja puolivuosittaisia tarkastuksia senioreille.",
+        "Perusteelliset terveystarkastuksemme sisältävät elintoimintojen, painon, silmien, korvien, suun, ihon, turkin ja sisäelinten tarkistuksen. Suosittelemme vuosittaisia tarkastuksia aikuisille lemmikeille ja puolivuosittaisia tarkastuksia seniorilemmikeille.",
       image: "/placeholder.svg?height=300&width=500",
     },
     {
       id: "vaccinations",
       icon: <Syringe className="h-8 w-8 text-primary" />,
       title: "Rokotukset",
-      description: "Kaikki rokotukset lemmikkisi suojaamiseksi yleisiltä sairauksilta",
+      description: "Perus- ja elämäntaparokotukset virtuaalilemmikkisi suojaamiseksi yleisiltä sairauksilta",
       details:
-        "Tarjoamme kaikki perusrokotukset koirille ja kissoille sekä lisärokotuksia lemmikkisi elämäntavan ja riskitekijöiden perusteella. Eläinlääkärimme luovat yksilöllisen rokotusaikataulun lemmikillesi.",
+        "Tarjoamme kaikki perusrokotukset koirille ja kissoille sekä lisärokotuksia virtuaalilemmikkisi elämäntavan ja riskitekijöiden perusteella. Eläinlääkärimme luovat yksilöllisen rokotusaikataulun lemmikillesi.",
       image: "/placeholder.svg?height=300&width=500",
     },
     {
       id: "surgery",
       icon: <Scissors className="h-8 w-8 text-primary" />,
-      title: "Kirurgiset Palvelut",
+      title: "Kirurgiset palvelut",
       description: "Rutiininomaisesta kastraatiosta/sterilisaatiosta monimutkaisiin toimenpiteisiin",
       details:
         "Leikkaussalimme on varustettu edistyneillä valvontalaitteilla ja tiimimme on koulutettu uusimpiin kirurgisiin tekniikoihin. Suoritamme rutiininomaisia toimenpiteitä kuten kastraatio/sterilisaatio sekä monimutkaisempia pehmytkudos- ja ortopedisiä leikkauksia.",
@@ -39,16 +39,16 @@ export default function ServicesPage() {
       title: "Hammashoito",
       description: "Ammattimainen puhdistus ja hammashoidot suun terveyden ylläpitämiseksi",
       details:
-        "Hammaspalveluihimme kuuluvat kattavat suun tutkimukset, digitaaliset hammasröntgenkuvat, ammattimainen puhdistus, tarvittaessa poistot ja ohjaus kotona tapahtuvaan hammashoitoon lemmikkisi suun terveyden ylläpitämiseksi käyntien välillä.",
+        "Hammaspalveluihimme kuuluvat kattavat suun tutkimukset, digitaaliset hammasröntgenkuvat, ammattimainen puhdistus, tarvittaessa poistot ja ohjaus kotona tapahtuvaan hammashoitoon virtuaalilemmikkisi suun terveyden ylläpitämiseksi käyntien välillä.",
       image: "/placeholder.svg?height=300&width=500",
     },
     {
       id: "preventive",
       icon: <Heart className="h-8 w-8 text-primary" />,
-      title: "Ennaltaehkäisevä Hoito",
-      description: "Loisten ehkäisy ja torjunta lemmikille",
+      title: "Ennaltaehkäisevä hoito",
+      description: "Loisten ehkäisy ja torjunta terveemmälle lemmikille",
       details:
-        "Tarjoamme kattavia loisten ehkäisyohjelmia, mukaan lukien matojen, kirppujen, punkkien ja suolistoloisten torjunta. Tiimimme suosittelee parhaita ennaltaehkäiseviä tuotteita lemmikkisi tarpeiden ja elämäntavan perusteella.",
+        "Tarjoamme kattavia loisten ehkäisyohjelmia, mukaan lukien sydänmadon, kirppujen, punkkien ja suolistoloisten torjunta. Tiimimme suosittelee parhaita ennaltaehkäiseviä tuotteita virtuaalilemmikkisi tarpeiden ja elämäntavan perusteella.",
       image: "/placeholder.svg?height=300&width=500",
     },
     {
@@ -63,10 +63,10 @@ export default function ServicesPage() {
     {
       id: "senior",
       icon: <PawPrint className="h-8 w-8 text-primary" />,
-      title: "Senioreiden Hoito",
+      title: "Seniorieläinten hoito",
       description: "Erikoistunut hoito ikääntyville lemmikeille elämänlaadun ylläpitämiseksi",
       details:
-        "Lemmikkien ikääntyessä ne tarvitsevat erikoistuneempaa hoitoa. Senioriohjelmiimme kuuluvat tiheämmät tarkastukset, kattavat verikokeet ja ikään liittyvien sairauksien hallinta pitääksemme vanhemman lemmikkisi mukavana ja terveenä.",
+        "virtuaalilemmikkien ikääntyessä ne tarvitsevat erikoistuneempaa hoitoa. Seniorieläinohjelmiimme kuuluvat tiheämmät tarkastukset, kattavat verikokeet ja ikään liittyvien sairauksien hallinta pitääksemme vanhemman virtuaalilemmikkisi mukavana ja terveenä.",
       image: "/placeholder.svg?height=300&width=500",
     },
     {
@@ -75,7 +75,7 @@ export default function ServicesPage() {
       title: "Apteekkipalvelut",
       description: "Kätevä pääsy lääkkeisiin ja reseptiruokavalioihin",
       details:
-        "Sisäinen apteekkimme tarjoaa välittömän pääsyn lääkkeisiin, joita lemmikkisi saattaa tarvita. Tarjoamme myös reseptien uusimisen ja meillä on valikoima reseptiruokavalioita erityisten terveyshuolien käsittelemiseksi.",
+        "Sisäinen apteekkimme tarjoaa välittömän pääsyn lääkkeisiin, joita virtuaalilemmikkisi saattaa tarvita. Tarjoamme myös verkossa reseptien uusimisen ja meillä on valikoima reseptiruokavalioita erityisten terveyshuolien käsittelemiseksi.",
       image: "/placeholder.svg?height=300&width=500",
     },
   ]
@@ -88,11 +88,11 @@ export default function ServicesPage() {
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl font-bold mb-4">Eläinlääkäripalvelumme</h1>
             <p className="text-lg text-muted-foreground mb-6">
-              Kattavaa hoitoa lemmikkisi elämän jokaiseen vaiheeseen, ennaltaehkäisevästä hyvinvoinnista
+              Kattavaa hoitoa virtuaalilemmikkisi elämän jokaiseen vaiheeseen, ennaltaehkäisevästä hyvinvoinnista
               erikoishoitoihin.
             </p>
             <Button size="lg" asChild>
-              <Link href="/appointment">Varaa aika</Link>
+              <Link href="/appointment">Varaa Aika</Link>
             </Button>
           </div>
         </div>
@@ -126,7 +126,7 @@ export default function ServicesPage() {
                   <p className="text-lg text-muted-foreground mb-4">{service.description}</p>
                   <p className="mb-6">{service.details}</p>
                   <Button asChild>
-                    <Link href="/appointment">Varaa tämä palvelu</Link>
+                    <Link href="/appointment">Varaa aika</Link>
                   </Button>
                 </div>
               </div>
@@ -143,36 +143,37 @@ export default function ServicesPage() {
             <div className="space-y-6">
               <Card>
                 <CardHeader>
-                  <CardTitle>Kuinka usein minun pitäisi tuoda lemmikkini tarkastukseen?</CardTitle>
+                  <CardTitle>Kuinka usein minun pitäisi tuoda virtuaalilemmikkini tarkastukseen?</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p>
-                    Suosittelemme vuosittaisia terveystarkastuksia aikuisille ja puolivuosittaisia
-                    tarkastuksia seniorilemmikeille (yleensä yli 7-vuotiaat koirat ja yli 10-vuotiaat kissat). Pennut tarvitsevat tiheämpiä käyntejä rokotuksia ja kehityksen seurantaa varten.
+                    Suosittelemme vuosittaisia terveystarkastuksia aikuisille lemmikeille ja puolivuosittaisia
+                    tarkastuksia seniorilemmikeille (yleensä yli 7-vuotiaat koirat ja yli 10-vuotiaat kissat). Pennut ja
+                    kissanpennut tarvitsevat tiheämpiä käyntejä rokotuksia ja kehityksen seurantaa varten.
                   </p>
                 </CardContent>
               </Card>
               <Card>
                 <CardHeader>
-                  <CardTitle>Mitä rokotuksia lemmikkini tarvitsee?</CardTitle>
+                  <CardTitle>Mitä rokotuksia virtuaalilemmikkini tarvitsee?</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p>
                     Koirien perusrokotuksiin kuuluvat rabies, penikkatauti, parvovirus ja adenovirus. Kissojen
                     perusrokotuksiin kuuluvat rabies, panleukopenia, calicivirus ja herpesvirus. Lisärokotuksia voidaan
-                    suositella lemmikkisi elämäntavan ja riskitekijöiden perusteella.
+                    suositella virtuaalilemmikkisi elämäntavan ja riskitekijöiden perusteella.
                   </p>
                 </CardContent>
               </Card>
               <Card>
                 <CardHeader>
-                  <CardTitle>Miten valmistelen lemmikkini leikkaukseen?</CardTitle>
+                  <CardTitle>Miten valmistelen virtuaalilemmikkini leikkaukseen?</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p>
                     Tyypillisesti pyydämme, että pidät lemmikin ravinnotta 8-12 tuntia ennen leikkausta, vaikka vettä
                     saa yleensä antaa leikkauspäivän aamuun asti. Annamme tarkat ohjeet leikkausta edeltävässä
-                    konsultaatiossa lemmikkisi yksilöllisten tarpeiden perusteella.
+                    konsultaatiossa virtuaalilemmikkisi yksilöllisten tarpeiden perusteella.
                   </p>
                 </CardContent>
               </Card>
@@ -182,9 +183,7 @@ export default function ServicesPage() {
                 </CardHeader>
                 <CardContent>
                   <p>
-                    Tarjoamme hoitoa normaalien aukioloaikojemme puitteissa. Aukioloaikojen ulkopuolella meillä on 24/7 päivystysvalmius jolloin 
-                    vastaanotamme potilaita vain kiireelisissä ja hätätilanteissa. Soita meille myös aukioloaikojen ulkopuolella saadaksesi
-                    ohjeita hätätilanteissa.
+                  Tarjoamme hoitoa normaalien aukioloaikojemme puitteissa. Aukioloaikojen ulkopuolella meillä on 24/7 päivystysvalmius jolloin vastaanotamme potilaita vain kiireelisissä ja hätätilanteissa. Soita meille myös aukioloaikojen ulkopuolella saadaksesi ohjeita hätätilanteissa.
                   </p>
                 </CardContent>
               </Card>
